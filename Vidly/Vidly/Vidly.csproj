@@ -116,14 +116,17 @@
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\FilterConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
+        <Compile Include="Controllers\CustomerController.cs" />
         <Compile Include="Controllers\HomeController.cs" />
         <Compile Include="Controllers\MovieController.cs" />
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
+        <Compile Include="Models\Customer.cs" />
         <Compile Include="Models\Movie.cs" />
         <Compile Include="Models\TModel.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="ViewModels\RandomMovieViewModel.cs" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="favicon.ico" />
@@ -140,6 +143,10 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js" />
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
         <Content Include="Scripts\modernizr-2.8.3.js" />
+        <Content Include="Views\Customer\CustomerView.cshtml" />
+        <Content Include="Views\Customer\Index.cshtml" />
+        <Content Include="Views\Movie\Index.cshtml" />
+        <Content Include="Views\Movie\MovieDetails.cshtml" />
         <Content Include="Views\Movie\Random.cshtml" />
         <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
