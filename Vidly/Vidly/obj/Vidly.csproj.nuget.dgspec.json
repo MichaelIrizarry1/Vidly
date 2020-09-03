@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike\\Desktop\\Vidly\\Vidly\\Vidly.csproj": {}
+    "C:\\Users\\Mike\\Desktop\\Git\\Vidly\\Vidly\\Vidly\\Vidly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike\\Desktop\\Vidly\\Vidly\\Vidly.csproj": {
+    "C:\\Users\\Mike\\Desktop\\Git\\Vidly\\Vidly\\Vidly\\Vidly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\Desktop\\Vidly\\Vidly\\Vidly.csproj",
+        "projectUniqueName": "C:\\Users\\Mike\\Desktop\\Git\\Vidly\\Vidly\\Vidly\\Vidly.csproj",
         "projectName": "Vidly",
-        "projectPath": "C:\\Users\\Mike\\Desktop\\Vidly\\Vidly\\Vidly.csproj",
+        "projectPath": "C:\\Users\\Mike\\Desktop\\Git\\Vidly\\Vidly\\Vidly\\Vidly.csproj",
         "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\Desktop\\Vidly\\Vidly\\obj\\",
+        "outputPath": "C:\\Users\\Mike\\Desktop\\Git\\Vidly\\Vidly\\Vidly\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
