@@ -1,45 +1,41 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.Mvc;
-using System.Web.Routing;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Vidly.Models;
-using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
     public class CustomerController : Controller
     {
-        // GET
-        public ActionResult Index()
+        public IActionResult Index()
         {
-
-            var customers = GetCustomers();
-
-            
-           
+            var customers = GetCustomer();
             return View(customers);
         }
-        
-        [Route ("customer/{Id}")]
-        public ActionResult CustomerView(int id)
+
+        [Route("Customer/{id}")]
+        public ActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+            var customer = GetCustomer().SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
-                return new HttpNotFoundResult();
+                return NotFound();
+
             }
-            
             return View(customer);
         }
-        
-        private IEnumerable<Customer> GetCustomers()
+
+        private IEnumerable<Customer> GetCustomer()
         {
             return new List<Customer>
             {
-                new Customer { Id = 1, Name = "John Smith" },
-                new Customer { Id = 2, Name = "Mary Williams" }
+                new Customer { Id = 1, Name = "Michael" },
+                new Customer { Id = 2, Name = "Nathalie" }
             };
         }
+
+
     }
 }
