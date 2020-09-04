@@ -18,6 +18,7 @@ else
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Name </th>
+                <th scope="col">Discount Rate </th>
                 <th scope="col">Action </th>
 
             </tr>
@@ -29,6 +30,8 @@ else
 
                     <td>@customer.Id</td>
                     <td>@customer.Name</td>
+                    <td> @customer.MembershipType.DiscountRate%</td>
+
 
                     <td><a href="customer/@customer.Id">View</a></td>
                 </tr>

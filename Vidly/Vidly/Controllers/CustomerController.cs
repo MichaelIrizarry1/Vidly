@@ -3,22 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Vidly.Data;
 using Vidly.Models;
 
 namespace Vidly.Controllers
 {
     public class CustomerController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public CustomerController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         public IActionResult Index()
         {
-            var customers = GetCustomer();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
         }
 
         [Route("Customer/{id}")]
         public ActionResult Details(int id)
         {
-            var customer = GetCustomer().SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
                 return NotFound();
@@ -27,14 +41,7 @@ namespace Vidly.Controllers
             return View(customer);
         }
 
-        private IEnumerable<Customer> GetCustomer()
-        {
-            return new List<Customer>
-            {
-                new Customer { Id = 1, Name = "Michael" },
-                new Customer { Id = 2, Name = "Nathalie" }
-            };
-        }
+       
 
 
     }
