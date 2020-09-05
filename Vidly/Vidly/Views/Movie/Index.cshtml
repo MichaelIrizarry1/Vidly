@@ -17,6 +17,7 @@ else
         <tr>
             <th scope="col">Id</th>
             <th scope="col">Name </th>
+            <th scope="col">Genre </th>
             <th scope="col">Action </th>
 
         </tr>
@@ -28,6 +29,7 @@ else
 
                 <td>@movie.Id</td>
                 <td>@movie.Name</td>
+                <td>@movie.Genre.Name</td>
 
                 <td><a href="movie/@movie.Id">View</a></td>
             </tr>
