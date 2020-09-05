@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Vidly.Data;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -41,7 +42,43 @@ namespace Vidly.Controllers
             return View(customer);
         }
 
-       
+        [Route("Customer/New")]
+        public ActionResult New()
+        {
+            var membershipType = _context.MembershipType;
+            var viewModel = new CustomerMembershipTypeViewModel()
+            {
+                MembershipTypes = membershipType
+            };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index","Customer");
+        }
+
+        [Route("customer/edit/{id}")]
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            if (customer == null)
+            {
+                return NotFound();
+
+            }
+
+            var viewModel = new CustomerMembershipTypeViewModel()
+            {
+                MembershipTypes = _context.MembershipType,
+                Customer = customer
+            };
+            return View(viewModel);
+        }
+        
 
 
     }

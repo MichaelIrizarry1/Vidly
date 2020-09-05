@@ -194,3 +194,5 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\staticwebassets\Vidly.StaticWebAssets.Manifest.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\staticwebassets\Vidly.StaticWebAssets.xml
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.genruntimeconfig.cache
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\New.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs

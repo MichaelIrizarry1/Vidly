@@ -30,6 +30,8 @@ namespace Vidly.Controllers
             return View(movies);
         }
 
+        
+
         [Route("movie/{id}")]
         public ActionResult Details(int id)
         {
