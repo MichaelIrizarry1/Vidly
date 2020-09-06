@@ -196,3 +196,5 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\staticwebass
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.genruntimeconfig.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\New.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Edit.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Movie\New.cshtml.g.cs

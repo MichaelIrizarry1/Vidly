@@ -78,6 +78,29 @@ namespace Vidly.Controllers
             };
             return View(viewModel);
         }
+
+        [HttpPost]
+        public ActionResult Update(Customer customer)
+        {
+            var customerToUpdate = _context.Customers.SingleOrDefault(c => c.Id == customer.Id);
+
+            if (customerToUpdate == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                customerToUpdate.Name = customer.Name;
+                customerToUpdate.Birthdate = customer.Birthdate;
+                customerToUpdate.IsSubscribedToNewsLetter = customer.IsSubscribedToNewsLetter;
+                customerToUpdate.MembershipTypeId = customer.MembershipTypeId;
+
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("index","Customer");
+        }
         
 
 

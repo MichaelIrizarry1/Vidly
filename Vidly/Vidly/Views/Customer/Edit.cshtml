@@ -8,27 +8,29 @@
 <h2>title</h2>
 
 
-@using (Html.BeginForm("Create", "Customer"))
+@using (Html.BeginForm("Update", "Customer"))
 {
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.Name)
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
     </div>
+
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.Birthdate)
         @Html.TextBoxFor(m => m.Customer.Birthdate, new { @class = "form-control" })
     </div>
-    <div class="chekbox">
 
-        <label>
-
-            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsLetter) isSubscribedToNewsLetter?
-        </label>
-
-    </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.MembershipType.MembershipName)
         @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "MembershipName"), "Select Membership Type", new { @class = "form-control" })
     </div>
+
+    <div class="chekbox">
+        <label>
+            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsLetter) isSubscribedToNewsLetter?
+        </label>
+    </div>
+
+    @Html.HiddenFor(m => m.Customer.Id)
     <button type="submit" class="btn btn-primary">Save</button>
 }
