@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using Vidly.Data;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -86,19 +87,41 @@ namespace Vidly.Controllers
         [Route("Movie/New")]
         public ActionResult New()
         {
-            var viewModel = new MoviesEditViewModel()
+            var viewModel = new MoviesCreateViewModel()
             {
-                Genre = _context.Genre
+                Genres = _context.Genre
             };
             return View(viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Movie movie)
         {
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
-            return RedirectToAction("Index", "Movie");
+            ModelState.Remove("Id");
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MoviesCreateViewModel()
+                {
+                    Name = movie.Name,
+                    DateAdded = movie.DateAdded,
+                    ReleaseDate = movie.ReleaseDate,
+                    NumberInStock = movie.NumberInStock,
+                    GenreId = movie.GenreId,
+                    Genres = _context.Genre
+                    
+                };
+
+                return View("New",viewModel);
+                
+            }
+            else
+            {
+                _context.Movies.Add(movie);
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Movie");
+            }
+
         }
 
 

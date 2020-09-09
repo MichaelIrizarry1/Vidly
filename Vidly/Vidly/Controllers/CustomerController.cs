@@ -54,11 +54,25 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Customer customer)
         {
-            _context.Customers.Add(customer);
-            _context.SaveChanges();
-            return RedirectToAction("Index","Customer");
+            if (!ModelState.IsValid)
+            {
+                
+                var viewModel = new CustomerMembershipTypeViewModel()
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipType
+                };
+                return View("New", viewModel);
+            }
+            else
+            {
+                _context.Customers.Add(customer);
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Customer");
+            }
         }
 
         [Route("customer/edit/{id}")]
@@ -80,8 +94,11 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
+        
         public ActionResult Update(Customer customer)
         {
+
+            
             var customerToUpdate = _context.Customers.SingleOrDefault(c => c.Id == customer.Id);
 
             if (customerToUpdate == null)

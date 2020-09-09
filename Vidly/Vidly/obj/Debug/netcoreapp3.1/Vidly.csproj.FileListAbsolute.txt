@@ -99,9 +99,6 @@ C:\Users\Mike\Desktop\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\I
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csprojAssemblyReference.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.AssemblyInfoInputs.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.AssemblyInfo.cs
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj.CoreCompileInputs.cache
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.RazorAssemblyInfo.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.RazorAssemblyInfo.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.dll
@@ -198,3 +195,13 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Edit.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Movie\New.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj.CoreCompileInputs.cache
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cache

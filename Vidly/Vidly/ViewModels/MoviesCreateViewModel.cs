@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
+using Vidly.Models;
 
-namespace Vidly.Models
+namespace Vidly.ViewModels
 {
-
-    public class Movie
+    public class MoviesCreateViewModel
     {
-        public int Id { get; set; }
-
+        public IEnumerable<Genre> Genres { get; set; }
+       
         [Required]
         public string Name { get; set; }
         public DateTime ReleaseDate { get; set; }
