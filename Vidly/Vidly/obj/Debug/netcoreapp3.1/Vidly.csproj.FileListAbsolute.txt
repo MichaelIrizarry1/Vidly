@@ -202,6 +202,7 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.IO.Pi
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj.CoreCompileInputs.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cache
