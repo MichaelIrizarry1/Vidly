@@ -24,10 +24,10 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            
+            return View();
         }
 
         [Route("Customer/{id}")]

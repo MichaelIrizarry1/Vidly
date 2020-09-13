@@ -8,6 +8,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Vidly.Data;
 using Vidly.Dtos;
 using Vidly.Models;
@@ -30,7 +31,7 @@ namespace Vidly.Controllers.Api
         
         public IEnumerable<CustomerDto> GetCustomers()
         { 
-            return _context.Customers.ToList().Select(_mapper.Map<Customer,CustomerDto>);
+            return _context.Customers.Include(m => m.MembershipType).Select(_mapper.Map<Customer,CustomerDto>);
             
         }
 
@@ -88,6 +89,7 @@ namespace Vidly.Controllers.Api
             _context.SaveChanges();
         }
 
+        [Route("{id}")]
         [HttpDelete]
         public void DeleteCustomer(int id)
         {
