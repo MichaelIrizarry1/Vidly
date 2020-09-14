@@ -15,6 +15,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase

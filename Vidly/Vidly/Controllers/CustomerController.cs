@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Vidly.Data;
@@ -10,6 +11,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+    [AllowAnonymous]
     public class CustomerController : Controller
     {
         private ApplicationDbContext _context;
