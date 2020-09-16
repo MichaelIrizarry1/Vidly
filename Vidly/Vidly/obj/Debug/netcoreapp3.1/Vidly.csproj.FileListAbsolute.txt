@@ -316,3 +316,4 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Role\Index.cshtml.g.cs
