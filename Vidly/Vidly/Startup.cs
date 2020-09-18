@@ -9,12 +9,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Vidly.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Owin;
+using Microsoft.Owin.Security.Facebook;
 using Vidly.Models;
 
 namespace Vidly
@@ -58,8 +61,19 @@ namespace Vidly
 
             services.AddMvc(options =>
             {
-                options.Filters.Add(new AuthorizeFilter(policy));
+                options.Filters.Add(new AuthorizeFilter());
+                options.Filters.Add(new RequireHttpsAttribute());
             });
+
+            
+
+            services.AddAuthentication().AddFacebook(o =>
+            {
+                o.AppId = "635345627408839";
+                o.AppSecret = "8640bb836e8b3b76631e3ec780a5acd2";
+            });
+
+            
 
             services.AddMvc();
         }
@@ -85,6 +99,8 @@ namespace Vidly
 
             app.UseAuthentication();
             app.UseAuthorization();
+            
+
 
             app.UseEndpoints(endpoints =>
             {

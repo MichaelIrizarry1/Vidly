@@ -25,11 +25,13 @@
       "Vidly/1.0.0": {
         "dependencies": {
           "Bootbox.JS": "5.2.0",
+          "Microsoft.AspNetCore.Authentication.Facebook": "3.1.8",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.8",
           "Microsoft.AspNetCore.Identity.UI": "3.1.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.8",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.8",
+          "Microsoft.Owin.Security.Facebook": "4.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.4",
           "StackExchange.Redis": "2.1.58",
           "AutoMapper": "10.0.0",
@@ -322,6 +324,17 @@
         }
       },
       "jQuery/1.12.4": {},
+      "Microsoft.AspNetCore.Authentication.Facebook/3.1.8": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "3.1.8.0",
+            "fileVersion": "3.100.820.42106"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.8": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -1120,6 +1133,52 @@
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Owin/4.1.1": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.25372.136"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/4.1.1": {
+        "dependencies": {
+          "Microsoft.Owin": "4.1.1",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.25372.136"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Facebook/4.1.1": {
+        "dependencies": {
+          "Microsoft.Owin": "4.1.1",
+          "Microsoft.Owin.Security": "4.1.1",
+          "Newtonsoft.Json": "12.0.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Facebook.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.25372.136"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Facebook.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration/3.1.4": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "3.1.8",
@@ -1331,6 +1390,17 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Owin.dll": {}
         }
       },
       "Pipelines.Sockets.Unofficial/2.1.16": {
@@ -4032,6 +4102,13 @@
       "path": "jquery/1.12.4",
       "hashPath": "jquery.1.12.4.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.Facebook/3.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ytgKz8ARJw7iHlqexXcv9HfH1VMIqosNwg233prUtPwsyjtE9hYU1EYz1+b/25h+ms3z2gunGSpFXeLOS3tikg==",
+      "path": "microsoft.aspnetcore.authentication.facebook/3.1.8",
+      "hashPath": "microsoft.aspnetcore.authentication.facebook.3.1.8.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.8": {
       "type": "package",
       "serviceable": true,
@@ -4375,6 +4452,27 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+    "Microsoft.Owin/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KtjkRz4COQRqrwOBMf+XKW1ZsdiFMqipbmM0khhNJIx6U9VRprbwRGdSq1++PHlZrIwHMmwRHC0nILNSHGkcaA==",
+      "path": "microsoft.owin/4.1.1",
+      "hashPath": "microsoft.owin.4.1.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TdqTlOBgh2JKdG0uolwQJeAjW/TLomDN+dGh79Tpv5haY/+u+B2I7X+Syf7GBht70DC0yNMonbQv1eQit7NkVA==",
+      "path": "microsoft.owin.security/4.1.1",
+      "hashPath": "microsoft.owin.security.4.1.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.Facebook/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Cp07FNRfnkAw5xK4M6FIubgVSasJpH3uTpZkfG/iCiKHNpxE/TY3YX2j69s99RV07rseoy7vMTA+1nzBK7UKA==",
+      "path": "microsoft.owin.security.facebook/4.1.1",
+      "hashPath": "microsoft.owin.security.facebook.4.1.1.nupkg.sha512"
+    },
     "Microsoft.VisualStudio.Web.CodeGeneration/3.1.4": {
       "type": "package",
       "serviceable": true,
@@ -4472,6 +4570,13 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "Pipelines.Sockets.Unofficial/2.1.16": {
       "type": "package",

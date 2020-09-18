@@ -275,9 +275,6 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\ru\Microsoft
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj.CoreCompileInputs.cache
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
@@ -317,3 +314,11 @@ C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Razor\Views\Role\Index.cshtml.g.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Owin.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.csproj.CoreCompileInputs.cache
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mike\Desktop\Git\Vidly\Vidly\Vidly\obj\Debug\netcoreapp3.1\Vidly.MvcApplicationPartsAssemblyInfo.cache
